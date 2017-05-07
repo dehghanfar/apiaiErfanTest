@@ -1,22 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @dehghanfar
- Sign out
- Watch 16
-  Star 82
- Fork 160 api-ai/api-ai-facebook
-forked from xVir/api-ai-facebook
- Code  Issues 2  Pull requests 3  Projects 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathapi-ai-facebook/src/app.js
-ea69f36  10 days ago
-@xVir xVir Add location processing #17
-4 contributors @xVir @walterholohan @samuel-cloete @KorChris
-RawBlameHistory     
-565 lines (469 sloc)  19.1 KB
 'use strict';
 
 const apiai = require('apiai');
@@ -581,5 +562,3 @@ app.listen(REST_PORT, () => {
 });
 
 facebookBot.doSubscribeRequest();
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help
