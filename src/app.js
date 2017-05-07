@@ -312,7 +312,7 @@ facebook_user: userName
                     originalRequest: {
                         data: event,
                         source: "facebook"
-                    },
+                    }
                    contexts: [
 {
 name: "generic",
