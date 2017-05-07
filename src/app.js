@@ -310,9 +310,9 @@ facebook_user: userName
                 {
                     sessionId: this.sessionIds.get(sender),
                     originalRequest: {
--                        data: event,
--                        source: "facebook"
--                    },
+                        data: event,
+                        source: "facebook"
+                    },
                    contexts: [
 {
 name: "generic",
