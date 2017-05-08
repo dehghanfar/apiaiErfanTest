@@ -1,5 +1,6 @@
 'use strict';
 
+
 const apiai = require('apiai');
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -299,7 +300,7 @@ class FacebookBot {
             if (!this.sessionIds.has(sender)) {
                 this.sessionIds.set(sender, uuid.v4());
             }
-
+            console.log("sender", sender);
             console.log("Text", text);
             //send user's text to api.ai service
             let apiaiRequest = this.apiAiService.textRequest(text,
