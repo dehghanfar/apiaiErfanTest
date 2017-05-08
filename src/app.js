@@ -270,7 +270,7 @@ class FacebookBot {
     processFacebookEvent(event) {
         const sender = event.sender.id.toString();
         const eventObject = this.getFacebookEvent(event);
-console.log("sender", sender);
+
         if (eventObject) {
 
             // Handle a text message from this sender
@@ -300,7 +300,7 @@ console.log("sender", sender);
             if (!this.sessionIds.has(sender)) {
                 this.sessionIds.set(sender, uuid.v4());
             }
-
+            console.log("sender", sender);
             console.log("Text", text);
             //send user's text to api.ai service
             let apiaiRequest = this.apiAiService.textRequest(text,
