@@ -280,10 +280,14 @@ class FacebookBot {
             let apiaiRequest = this.apiAiService.eventRequest(eventObject,
                 {
                     sessionId: this.sessionIds.get(sender),
-                    originalRequest: {
-                        data: event,
-                        source: "facebook"
-                    }
+                  contexts: [
+{
+name: "generic",
+parameters: {
+facebook_user: userName
+}
+}
+]
                 });
             this.doApiAiRequest(apiaiRequest, sender);
         }
@@ -305,10 +309,15 @@ class FacebookBot {
             let apiaiRequest = this.apiAiService.textRequest(text,
                 {
                     sessionId: this.sessionIds.get(sender),
-                    originalRequest: {
-                        data: event,
-                        source: "facebook"
-                    }
+
+                   contexts: [
+{
+name: "generic",
+parameters: {
+facebook_user: userName
+}
+}
+]
                 });
 
             this.doApiAiRequest(apiaiRequest, sender);
