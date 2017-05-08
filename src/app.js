@@ -309,10 +309,7 @@ facebook_user: userName
             let apiaiRequest = this.apiAiService.textRequest(text,
                 {
                     sessionId: this.sessionIds.get(sender),
-                    originalRequest: {
-                        data: event,
-                        source: "facebook"
-                    }
+
                    contexts: [
 {
 name: "generic",
