@@ -270,7 +270,7 @@ class FacebookBot {
     processFacebookEvent(event) {
         const sender = event.sender.id.toString();
         const eventObject = this.getFacebookEvent(event);
-
+console.log("sender", sender);
         if (eventObject) {
 
             // Handle a text message from this sender
